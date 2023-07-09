@@ -7,16 +7,17 @@ The following examples are based on the book *Problem Solving with Algorithms an
 ## Code Requirements
 In order to provide with a great learning experience each example follow these specific rules:
 * Implemented with as little code as possible.
-* Include a before and after version.
+* Include a before and after version if applicable.
 * Well structured and documented.
 * Written exclusively in Python 3.10.
 
 ## Topscs Covered
 The following algorithms and data structures have been studied and are included in this repo.
 - [x] Algorithm Analysis
-  - [ ] Big O Notation
-  - [ ] Python Lists
-  - [ ] Pyhton Dictionaries   
+  - [x] Benchmarks
+  - [x] Big O Notation
+  - [x] Python Lists
+  - [x] Pyhton Dictionaries   
 - [ ] Basic Data Structures (Linear)
   - [ ] Stack
   - [ ] Queues
