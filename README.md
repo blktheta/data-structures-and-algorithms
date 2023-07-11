@@ -11,7 +11,7 @@ In order to provide with a great learning experience each example follow these s
 * Well structured and documented.
 * Written exclusively in Python 3.10.
 
-## Topscs Covered
+## Topics Covered
 The following algorithms and data structures have been studied and are included in this repo.
 - [x] Algorithm Analysis
   - [x] Benchmarks
@@ -19,8 +19,8 @@ The following algorithms and data structures have been studied and are included 
   - [x] Python Lists
   - [x] Pyhton Dictionaries   
 - [ ] Basic Data Structures (Linear)
-  - [ ] Stack
-  - [ ] Queues
+  - [x] Stack
+  - [x] Queues
   - [ ] Deques
   - [ ] Unordered List
   - [ ] Ordered List
@@ -28,7 +28,12 @@ The following algorithms and data structures have been studied and are included 
   - [ ] ...
 - [ ] Searching and Sorting
   - [ ] ...
-- [ ] ...
+- [ ] Trees and Tree Algorithms
+    - [ ] ...
+- [ ] Graphs and Graphing Algorithms
+    - [ ] ...
+- [ ] Advanced Topics
+    - [ ] ...
 
 ## Thank You
 Thank you for visiting, and dont forget to have fun while you dive into the maddness of DSA.
