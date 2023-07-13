@@ -18,14 +18,17 @@ The following algorithms and data structures have been studied and are included 
   - [x] Big O Notation
   - [x] Python Lists
   - [x] Pyhton Dictionaries   
-- [ ] Basic Data Structures (Linear)
+- [x] Basic Data Structures (Linear)
   - [x] Stack
   - [x] Queues
-  - [ ] Deques
-  - [ ] Unordered List
-  - [ ] Ordered List
+  - [x] Deques
+  - [x] Unordered List
+  - [x] Ordered List
 - [ ] Recursion
-  - [ ] ...
+  - [ ] Fractals
+  - [ ] Complex Recursion
+  - [ ] Mazes
+  - [ ] Dynamic Programming
 - [ ] Searching and Sorting
   - [ ] ...
 - [ ] Trees and Tree Algorithms
