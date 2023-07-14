@@ -24,13 +24,13 @@ The following algorithms and data structures have been studied and are included 
   - [x] Deques
   - [x] Unordered List
   - [x] Ordered List
-- [ ] Recursion
-  - [ ] Fractals
-  - [ ] Complex Recursion
-  - [ ] Mazes
-  - [ ] Dynamic Programming
+- [x] Recursion
+  - [x] Fractals
+  - [x] Complex Recursion
 - [ ] Searching and Sorting
-  - [ ] ...
+  - [ ] Searching
+  - [ ] Hashing
+  - [ ] Sorting
 - [ ] Trees and Tree Algorithms
     - [ ] ...
 - [ ] Graphs and Graphing Algorithms
