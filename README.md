@@ -27,12 +27,14 @@ The following algorithms and data structures have been studied and are included 
 - [x] Recursion
   - [x] Fractals
   - [x] Complex Recursion
-- [ ] Searching and Sorting
-  - [ ] Searching
-  - [ ] Hashing
-  - [ ] Sorting
+- [x] Searching and Sorting
+  - [x] Searching
+  - [x] Hashing
+  - [x] Sorting
 - [ ] Trees and Tree Algorithms
-    - [ ] ...
+    - [ ] Binary Trees
+    - [ ] Binary Heaps
+    - [ ] Binary Search Trees
 - [ ] Graphs and Graphing Algorithms
     - [ ] ...
 - [ ] Advanced Topics
