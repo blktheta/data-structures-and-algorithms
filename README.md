@@ -31,12 +31,18 @@ The following algorithms and data structures have been studied and are included 
   - [x] Searching
   - [x] Hashing
   - [x] Sorting
-- [ ] Trees and Tree Algorithms
-    - [ ] Binary Trees
-    - [ ] Binary Heaps
-    - [ ] Binary Search Trees
+- [x] Trees and Tree Algorithms
+    - [x] Binary Trees
+    - [x] Binary Heaps
+    - [x] Binary Search Trees
+    - [x] AVL binary Search Trees
 - [ ] Graphs and Graphing Algorithms
-    - [ ] ...
+    - [ ] Graph
+    - [ ] Vertex
+    - [ ] Breadth-First Search
+    - [ ] Depth-First Search
+    - [ ] Dijkstra's Algorithm
+    - [ ] Prim's Spanning Tree Algorithm
 - [ ] Advanced Topics
     - [ ] ...
 
