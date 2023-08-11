@@ -1,10 +1,11 @@
+"""
+Big O performance cost for Pyhton dictionaries operations.
+"""
 import timeit
-
 import random
 
 
-"""
-Compare the contains (in) operator of lists and dictionaries.
+"""Compare the contains (in) operator of lists and dictionaries.
 
 The implemantation should confirm that:
 
@@ -19,7 +20,6 @@ O(1):   delete item
 O(1):   contains (in)
 O(n):   iteration
 """
-
 print(f"{'n':10s}{'list':>10s}{'dict':>10s}")
 
 for i in range(10_000, 1_000_001, 20_000):
