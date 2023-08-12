@@ -1,5 +1,7 @@
+"""
+Ordered list implementation in Python.
+"""
 from typing import TypeVar
-
 from node import Node
 
 
@@ -7,15 +9,19 @@ T = TypeVar("T")
 
 
 class OrderedList:
+    """Ordered list implementation with Nodes."""
 
     def __init__(self):
+        """Create new list."""
         self.head = None
         self.tail = None
 
     def is_empty(self) -> bool:
+        """Check if the list is empty, O(1)."""
         return self.head is None
 
     def add(self, item: T):
+        """Add an item to the list, O(n)."""
         current = self.head
         previous = None
         stop = False
@@ -38,7 +44,8 @@ class OrderedList:
             if temp.next is None:
                 self.tail = temp
 
-    def size(self) -> int:  # O(n)
+    def size(self) -> int:
+        """Get the number of items in the list, O(n)."""
         current = self.head
         count = 0
 
@@ -48,6 +55,7 @@ class OrderedList:
         return count
 
     def search(self, item: T) -> bool:
+        """Search for an item in the list, O(n)."""
         current = self.head
         found = False
         stop = False
@@ -63,6 +71,7 @@ class OrderedList:
         return found
 
     def remove(self, item: T):
+        """Remove an item from the list, O(n)."""
         current = self.head
         previous = None
 
@@ -82,6 +91,7 @@ class OrderedList:
                 self.tail = previous
 
     def index(self, item: T) -> int:
+        """Retrieve the position of an item in the list, O(n)."""
         current = self.head
         pos = 0
 
@@ -94,6 +104,7 @@ class OrderedList:
         raise ValueError(f"{item} is not in the list")
 
     def pop(self, pos: int = -1) -> T:
+        """Remove and return an item at position from the list, 0(n)."""
         if pos == -1:
             pos = self.size()
 
@@ -113,30 +124,35 @@ class OrderedList:
         return current.data
 
 
-lst = OrderedList()
+def main():
+    lst = OrderedList()
 
-print(lst.is_empty())  # True
-lst.add(31)
-lst.add(77)
-lst.add(17)
-lst.add(93)
-lst.add(26)
-lst.add(54)
+    print(lst.is_empty())   # True
+    lst.add(31)
+    lst.add(77)
+    lst.add(17)
+    lst.add(93)
+    lst.add(26)
+    lst.add(54)
 
-print(lst.head.data)  # 17
-print(lst.tail.data)  # 93
-print(lst.is_empty())  # False
-print(lst.size())  # 6
+    print(lst.head.data)    # 17
+    print(lst.tail.data)    # 93
+    print(lst.is_empty())   # False
+    print(lst.size())       # 6
 
-lst.remove(54)
-lst.remove(93)
-print(lst.size())  # 4
-print(lst.tail.data)  # 77
-print(lst.index(77))  # 4
+    lst.remove(54)
+    lst.remove(93)
+    print(lst.size())       # 4
+    print(lst.tail.data)    # 77
+    print(lst.index(77))    # 4
 
-lst.pop()
-print(lst.tail.data)  # 31
-print(lst.size())  # 3
+    lst.pop()
+    print(lst.tail.data)    # 31
+    print(lst.size())       # 3
 
-lst.pop(2)
-print(lst.search(26))  # False
+    lst.pop(2)
+    print(lst.search(26))   # False
+
+
+if __name__ == "__main__":
+    main()

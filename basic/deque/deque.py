@@ -1,3 +1,7 @@
+"""
+Deque implementation in Python, the deque assume that
+the rear of the deque is at poistion 0 in the list.
+"""
 from typing import TypeVar
 
 

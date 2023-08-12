@@ -1,3 +1,9 @@
+"""
+Stack implementation in Python, the stack assumes that the end of the
+list will hold the top element of the stack. As the stack grows (push),
+new items will be added on the end of the list. Pop operations will
+manipulate that same end.
+"""
 from typing import TypeVar
 
 
@@ -16,11 +22,11 @@ class Stack:
         return self.items == []
 
     def push(self, item: T):
-        """Add an item to the stack."""
+        """Add an item to the stack, O(1)."""
         self.items.append(item)
 
     def pop(self) -> T:
-        """Remove an item from the stack."""
+        """Remove an item from the stack, O(1)."""
         return self.items.pop()
 
     def peek(self) -> T:

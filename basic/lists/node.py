@@ -1,3 +1,6 @@
+"""
+Node implementation in Python.
+"""
 from typing import TypeVar
 
 
@@ -5,7 +8,7 @@ T = TypeVar("T")
 
 
 class Node:
-    """A node of alinked list."""
+    """A node of a linked list."""
 
     def __init__(self, node_data: T):
         """Create new node."""
