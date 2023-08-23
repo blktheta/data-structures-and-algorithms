@@ -1,6 +1,6 @@
-"""
+""" Converting decimal numbers to binary numbers
+
 Method: Stack
-Example: Converting decimal numbers to binary numbers
 
 Algorithm that that continually divides the decimal number by 2 and
 keeps track of the remainder.

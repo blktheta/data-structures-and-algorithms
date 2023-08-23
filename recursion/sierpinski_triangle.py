@@ -1,7 +1,25 @@
+"""
+The Sierpinski triangle illstrates a three-way recursive algorithm.
+
+The procedure for drawing a Sierpinski triangle is simple.
+    1. Start with a single large triangle.
+    2. Divide this large triangle into four new triagles by connecting
+    the midpoint of each side.
+    3. Ignoring the middle triangle that you jst created, apply the
+    same procedure to each of the corner triangles.
+    4. Each time you create a new set of triangles, you recursively
+    apply this procedure to the three smaller corner triangles.
+
+Since the algorithm can be continued indefinetly, the base case
+can be set as an arbitrarily number of times you want to divide the
+triangle into pieces. This number can be called the degree, when we
+reach a degree of 0, we stop.
+"""
 import turtle
 
 
-def draw_triangle(points, color: str, t: turtle.Turtle):
+def draw_triangle(points: list[tuple], color: str, t: turtle.Turtle):
+    """Draw the triangles."""
     t.fillcolor(color)
     t.up()
     t.goto(points[0][0], points[0][1])
@@ -13,11 +31,13 @@ def draw_triangle(points, color: str, t: turtle.Turtle):
     t.end_fill()
 
 
-def get_mid(p1, p2):
+def get_mid(p1: tuple, p2: tuple) -> tuple:
+    """Retrieve the point halfway between the endpoints."""
     return ((p1[0] + p2[0]) / 2, (p1[1] + p2[1]) / 2)
 
 
-def sierpinski(points, degree: int, t: turtle.Turtle):
+def sierpinski(points: list[tuple], degree: int, t: turtle.Turtle):
+    """Make the recursive call."""
     colormap = ["navy", "blue", "skyblue", "cyan", "turquoise", "lightgreen", "white"]
     draw_triangle(points, colormap[degree], t)
     if degree > 0:
@@ -41,7 +61,7 @@ def sierpinski(points, degree: int, t: turtle.Turtle):
 def main():
     my_turtle = turtle.Turtle()
     my_win = turtle.Screen()
-    my_points = [[-180, -150], [0, 150], [180, -150]]
+    my_points = [(-180, -150), (0, 150), (180, -150)]
     sierpinski(my_points, 5, my_turtle)
     my_win.exitonclick()
 

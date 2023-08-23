@@ -1,6 +1,21 @@
 """
-Suppose a customer puts in a dollar bill and purchases an item for 37 cents.
-What is the smallest number of coins you can use to make change?
+Example of optimization proble that involves making change
+using the fewest coins possible.
+
+Problem:    Suppose a customer puts in a dollar bill and purchases
+            an item for 37 cents. What is the smallest number of coins
+            you can use to make change?
+
+Use Case: Suppose a customer puts in a dollar bill and purchases an
+item for 37 cents. What is the smallest number of coins you can use to
+make change? The answer is six coins: two quarters, one dime, and
+three pennies.
+
+How did we arrive at the answer of six coins? We start with the largest
+coin in our arsenal (a quarter) and use as many of those as possible,
+then we go to the next lowest coin value and use as many of those as
+possible. This first approach is called a greedy method because we try
+to solve as big a piece of the problem as possible right away.
 """
 from typing import TypeVar
 
@@ -9,7 +24,8 @@ T = TypeVar("T")
 
 
 def make_change_1(coin_denoms: list[int], change: int) -> int:
-    """Greedy method.
+    """Solution: greedy method.
+
     Try to solve as big a piece of the problem as possible right away.
 
     Extremely inefficient, Takes ~67,716,925 recursive calls to find the
@@ -26,10 +42,12 @@ def make_change_1(coin_denoms: list[int], change: int) -> int:
 
 
 def make_change_2(coin_denoms: list[int], change: int, known_results: int) -> int:
-    """ Solution: remember some of the past result to avoid recomputing
-        results. The solution is not dynamic programming, it
-        uses memoization/caching to improve preformance. Reduces the number of
-        recursive calls to 221 for 63 cents problem.
+    """ Solution: remember some of the past result to avoid
+        recomputing results.
+
+        The solution is not dynamic programming, it uses
+        memorization/caching to improve preformance. Reduces the number
+        of recursive calls to 221 for 63 cents problem.
     """
     min_coins = change
     if change in coin_denoms:
@@ -48,6 +66,7 @@ def make_change_2(coin_denoms: list[int], change: int, known_results: int) -> in
 
 def make_change_3(coin_denoms: list[int], change: int, min_coins: list[int]) -> int:
     """ Solution: dynamic programming algorithm
+
         min_coins parameter is a list of the minimum number of caoins needed
         to make each value. When the functions is done, min_coins will
         contain the solutions for all values from 0 to change.
@@ -88,18 +107,23 @@ def print_coins(coins_used: list[int], change: int):
         this_coin = coins_used[coin]
         print(this_coin, end=" ")
         coin = coin - this_coin
-    print()
+    print()     # space
 
 
-amnt = 63
-clist = [1, 5, 10, 21, 25]
-coins_used = [0] * (amnt + 1)
-coin_count = [0] * (amnt + 1)
+def main():
+    amnt = 63
+    clist = [1, 5, 10, 21, 25]
+    coins_used = [0] * (amnt + 1)
+    coin_count = [0] * (amnt + 1)
 
-print(make_change_4(clist, amnt, coin_count, coins_used))
-print(coin_count)
-print(coins_used)
-print_coins(coins_used, amnt)
-print(make_change_3(clist, amnt, coin_count))
-print(make_change_2(clist, amnt, coin_count))
-print(make_change_1(clist, amnt))  # will take seconds to finish
+    print(f"Make change 4: {make_change_4(clist, amnt, coin_count, coins_used)}")
+    print(coin_count)
+    print(coins_used)
+    print_coins(coins_used, amnt)
+    print(f"Make change 3: {make_change_3(clist, amnt, coin_count)}")
+    print(f"Make change 2: {make_change_2(clist, amnt, coin_count)}")
+    print(f"Make change 1: {make_change_1(clist, amnt)}")  # will take seconds to finish
+
+
+if __name__ == "__main__":
+    main()

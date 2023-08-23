@@ -1,10 +1,24 @@
+""" Merge sort algorithm implementation in Python.
+
+Merge sort is a recursive algorithm that continually splits a list in
+half. If the list is empty or has one item, it is sorted by definition
+(the base case). If the list has more than one item, we split the list
+and recursively invoke a merge sort on both halves. Once the two halves
+are sorted, the fundamental operation, called a merge, is performed.
+Merging is the process of taking two smaller sorted lists and combining
+them together into a single sorted new list.
+"""
 from typing import TypeVar
 
 
 T = TypeVar("T")
 
 
-def merge_sort(lst: list[T]):  # O(n log n) Note: Python slicing is O(k)
+def merge_sort(lst: list[T]):
+    """Merge sort algorithm, O(n log n).
+
+    Note: Python slicing is O(k)
+    """
     print("Splitting", lst)
     if len(lst) > 1:
         mid = len(lst) // 2
@@ -37,6 +51,11 @@ def merge_sort(lst: list[T]):  # O(n log n) Note: Python slicing is O(k)
     print("Merging", lst)
 
 
-lst = [54, 26, 93, 17, 77, 31, 44, 55, 20]
-merge_sort(lst)
-print(lst)
+def main():
+    lst = [54, 26, 93, 17, 77, 31, 44, 55, 20]
+    merge_sort(lst)
+    print(lst)
+
+
+if __name__ == "__main__":
+    main()

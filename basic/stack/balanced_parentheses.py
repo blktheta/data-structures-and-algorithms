@@ -1,6 +1,6 @@
-"""
+""" Balanced parentheses
+
 Method: Stack
-Example: Balanced parentheses
 
 Algorithm that read a string of parentheses from left to right and
 decide whether the symbols are balanced.

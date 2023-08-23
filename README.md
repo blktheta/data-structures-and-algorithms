@@ -25,7 +25,7 @@ That is it! Fire up your favourite text editor and open the **/code** directory.
 Explore all theoretical and techinical aspects of each topic in **Data Structures and Algortihms** by reading the project [Wiki][repo_wiki_url].
 
 ## 🔧 Usage
-Pick a topic of interest and navigate to the respective python file(s). Read the `docstring` for basic summarization and run the code to validate the information. 
+Pick a topic of interest then navigate to its wiki page and the respective python file(s). Read the `docstring` for basic summarization and run the code to validate the information. For more in-depth explenation of the data structures and algorithms read the wiki. 
 
 ## ⭐️ Project assistance
 If you want to say **thank you** or/and support a lone developers journey:
@@ -34,7 +34,6 @@ If you want to say **thank you** or/and support a lone developers journey:
 - Reach out to [Blk Theta][author].
 
 ## ⚠️ License
-
 [`Data Structures and Algorithms`][repo_url] is free and open-source software licensed under the [MIT License][repo_license_url]. All designs were created by [Blk Theta][author] and distributed under Creative Commons license (CC BY-NC-SA 4.0 International).
 
 <!--Python-->
@@ -48,7 +47,7 @@ If you want to say **thank you** or/and support a lone developers journey:
 [repo_banner_url]: https://upload.wikimedia.org/wikipedia/commons/7/7e/Self-portrait_%281628-1629%29%2C_by_Rembrandt.jpg 
 [repo_banner_img]: https://github.com/blktheta/data-structures-and-algorithms/blob/main/media/SelfPortrait-Rembrandt.png
 [repo_wiki_url]: https://github.com/blktheta/data-structures-and-algorithms/wiki
-[repo_wiki_img]: https://img.shields.io/badge/docs-wiki_page-white?style=for-the-badge&logo=none
+[repo_wiki_img]: https://img.shields.io/badge/docs-wiki_page-lightgrey?style=for-the-badge&logo=none
 [repo_license_url]: https://github.com/blktheta/data-structures-and-algorithms/blob/main/LICENSE.md
 [repo_license_img]: https://img.shields.io/badge/license-MIT-red?style=for-the-badge&logo=none
 
